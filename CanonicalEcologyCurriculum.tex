@@ -1,0 +1,111 @@
+\documentclass[english,11pt,a4paper, landscape]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode} %[noend]
+	\makeatletter
+	\def\BState{\State\hskip-\ALG@thistlm}
+	\makeatother
+\usepackage{babel}
+\usepackage[margin=1cm, paperwidth=53cm]{geometry}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue,
+citecolor=darkgray]{hyperref}
+\usepackage{libertine}
+\usepackage{natbib}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+
+\let\vec\mathbf
+\frenchspacing
+
+\title{Canonical Ecology Curriculum: a working document for its core content}
+\author{The Global CEC initiative ...}
+
+
+\begin{document}
+\maketitle
+
+\section{About}
+Which elements of ecology should be known to any ecologist reaching MSc (or early PhD) level? Following \citet{Dormann2023}, we suggest to organise the topics by spatio-temporal scale (= level of organisation) from large to small. This repository aims at collecting and communicating ideas and links to resources (books, papers, MOOCs, videos) that help teaching (and learning) about a subject.
+
+We recognise that opinions will differ about what to include as \emph{core} ecological topics. Take your pick and add your ideas! This is not aiming to be prescriptive or homogenising, but fostering a common language and knowledge base.
+
+All material presented for download is open access for non-commercial use, unless stated otherwise.
+
+
+\section{Introduction}
+Within ecology, collaborations are key to understanding the beauty and complexity of nature, and for addressing urgent environmental problems. But how often did we experience collaborations thwarted by miscommunication and lack of a common language? We seem to work with loosely defined concepts and inconsistent vocabulary. Overcoming such problems starts with a well-trained new generation of ecologists. For them, a Canonical Ecology Curriculum is needed, focusing on core theories, seminal papers and standard methods used by ecologists.
+
+Based on a conceptual and operational backbone, such a curriculum could be taught in graduate programmes worldwide, augmented by local examples, individual research interests and enthusiasm. It would minimize the ambiguity of what ecologists learn, while enriching our common vocabulary, reinforcing our ability to understand nature and address complex environmental issues. 
+
+We call for a global, open collaboration to collectively develop the curriculum, and make it directly usable in real-world teaching. As a starting point, we provide eight central spatiotemporal themes, ranging from molecular to global, with recommendations on target variables, theories, classical studies, methods and teaching resources. 
+
+If you are interested in joining our cause, take a look at, and comment on, the current version of our curriculum’s backbone (for more background reading see our paper in Basic and Applied Ecology):
+
+\begin{itemize}
+	\item Below the table, please link your teaching material to openly share with colleagues.
+	\item If you miss something in the curriculum, please add this topic at the bottom of the text along with a justification.
+	\item If you think something is not important enough for a core curriculum, please leave a similar note below the table to tell us why.
+\end{itemize}
+
+\section{Elements of the Canonical Ecology Curriculum}
+Only unshaded rows are developed to some extent, the others are very preliminary.\\ \textcolor{blue}{Links} point to resource.
+\textcolor{purple}{Purple}: advanced topics, MSc-level or higher; \textcolor{teal}{teal}: fundamental technical skills.
+
+\noindent
+\begin{tabularx}{\textwidth}{p{2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X}
+	\hline
+\textbf{Scale} & \textbf{Target variables (examples)} & \textbf{Theory or Frame­work} & \textbf{Classics (by keyword)} & \textbf{Methods}	\\	\hline
+
+\textbf{Global}  & Biomass, productivity & species-energy relationship (incl. \href{https://en.wikipedia.org/wiki/Bergmann\%27s_rule}{Bergmann's Rule}; ) & \href{http://www.nature.com/articles/s41559-017-0089}{Biome delineation}& \textcolor{teal}{database skills; Model 2 regression;} \\
+		& species occurrence; species richness & (Mac­roecology); island biogeography; speciation, extinction mechanisms; (animal) migration; \href{https://www.journals.uchicago.edu/doi/10.1086/382056}{mid-domain effect} & Island radiation (\emph{Echium}, \emph{Geospiza}); \href{https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.34.012103.144032}{Latitudinal gradient in species richness}& \textcolor{teal}{(non)linear (mixed-effects) model;}\\
+		& functional traits & \href{https://en.wikipedia.org/wiki/Rapoport\%27s_rule}{Rapaport's Rule}, \href{https://en.wikipedia.org/wiki/Foster\%27s_rule}{Foster's Rule} && \\
+		& stoichiometry & \href{https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0706.2013.00465.x}{stoichiometry-energy relationship} &&\\
+		& C-balance, O2-production && \href{https://globalcarbonbudget.org/}{GlobalCarbonBudget}& \\ \hline
+
+\rowcolor{lightgray}	
+\textbf{Landscape} & Patch-level popu­lation size & Landscape configura­tion, meta-community, meta-population; & SLOSS; fragmentation; land­scape networks & \textcolor{teal}{GIS; remote sensing;} bi­otelemetry; \textcolor{teal}{mathematical modelling} \\
+\rowcolor{lightgray}
+		& & spe­cies-area law; & &\\ \hline
+
+\rowcolor{lightgray}
+\textbf{Ecosystem} & C-, N-, P-pools and fluxes; water fluxes; decom­position rates; tree growth; en­ergy density per trophic level & Nutrient cycles; energy fluxes; metabolic scaling theory; BD-EF  &  Biosphere 2; Duke \& Harvard Forest; FLUXNET; Si-deposition from Chad in Amazon & EC-towers; decomposition bags; leaf chemistry; Earth system models; \textcolor{teal}{forester diagram-models; ODEs (ordinary differential equations)}\\
+\rowcolor{lightgray}
+	& types of ecosystems (terrestrial, limnic, marine) & & & \\
+
+\textbf{Community} & Richness, functional/phylogenetic/other diversity; species abund­ance distribu­tions; & (modern) coexistence theory: equalising (storage, Janzen-Connell, niche differentiation) and stabilising;  Temporal community dynamics (succession); & Succession: Michigan dunes, Mount Glacier forefield; & Plot sampling in the field;
+diversity metrics;
+\textcolor{teal}{multivariate statistics, ordination, distances and clustering}; 
+net­work analysis; \textcolor{teal}{Database skills}; \textcolor{teal}{taxonomic expertise}, \textcolor{teal}{meta-genomics}	\\
+	& co-occur­rence patterns, beta-diversity; & Assembly rules, neutral the­ory; & neutral theory: BCI & \textcolor{purple}{stochastic coupled ODE simulations}; 
+	\\
+	& network structure and stability & food webs; ecological networks; indirect interactions; & top-down/bottom-up: Oksanen/Fretwell/HSS; key­stone species: starfish-algae: Paine; otter-kelp forest: Estes; 
+	beaver, elephants, …; frugivorous bird networks along Andean altitude gradient;	& \\ \hline
+			
+\textbf{Pairwise} \newline \textbf{dynamics}  & Abundances of both species; & Continuous Lotka-Volterra com­petition, predation, and mutualism models; (modern) coexistence theory; parasite-host dynamics (discrete: Nicholson-Bailey, Hassall); & \href{https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.2187}{Competition experiment}; Janzen-Connell effect; biocontrol (importance of timing);
+\href{https://www.science.org/doi/10.1126/science.269.5227.1112}{snowshoe-hare-lynx}; \emph{Paramecium aurelia} vs \emph{P. caudata}; & Microbial/plant competition experiments in field and lab; designs for feeding trials; population monitoring; \textcolor{teal}{ODE/DE simulations;
+state/phase-space plots}; \textcolor{purple}{game theory}\\
+	&& Functional and numerical response; & ... & \\
+ 	&&  Tilman's Isocline model; & ... & \\	
+ 	&&  Character/niche displacement, fundamental \& realised niche; & \href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0043358}{Hohenheimer ground water experiment};& \\	
+ 	&&  \href{https://www.journals.uchicago.edu/doi/abs/10.1086/285022}{Herbivory \& plant defence}; & ... &  \\	
+ 	&&  \href{https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.022405}{allo­metric prey-predator rules}; & ... & \\	
+ 	&&  disease spread/epidemiology \href{https://shiny.aj2duncan.com/risk/disease/}{(SIR)}; & SARS-CoV2 (SIR) & \\	
+ 	&&  \textcolor{purple}{multiple resource model}; &... &  \\	
+ 	&&  \textcolor{purple}{apparent competition/apparent facilitation} & ... & \\	
+ 	& fitness; & ... & ... & \\
+ 	& interaction strength &... & ...& \\ \hline
+
+\rowcolor{lightgray}
+\textbf{Individual} & Activity budget; movement; niche; feed­ing preferences; ontogenetic changes in beha­viour  & Individual specialisa­tion; behavioural eco­logy; evolutionary game theory; allomet­ric growth law; dy­namic energy budget (incl. optimal foraging); \href{https://en.wikipedia.org/wiki/Liebig\%27s_law_of_the_minimum}{Liebig’s law of minimum} &  Individual specialisa­tion; evolution of altru­istic behaviour; the lo­gic of animal conflict & Biotelemetry; cafeteria tri­als; captivity experiments; \textcolor{teal}{mathematical modelling (ODE, DE; IBM)} \\ \hline
+
+\rowcolor{lightgray}
+\textbf{Genes} & Allele frequen­cies; heterozygos­ity & Population genetics (selection, mutation, genetic drift, gene flow); coalescent the­ory; landscape genetics & \emph{Drosophila} and \emph{Ara­bidopsis}; bottleneck effect; in­breeding depression; genetic drift & Behavioural observations; fitness manipulation; \textcolor{purple}{game theory} \\ \hline
+\end{tabularx}
+
+
+\bibliographystyle{apalike2} 
+\bibliography{/Users/carsten/Nextcloud/Carsten/CFD_library}
+
+\end{document}
